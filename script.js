@@ -180,5 +180,7 @@ document.addEventListener('fullscreenchange', (event) => {
         // if its false... make sure the video styling removes full-screen class
         video.classList.remove('video-fullscreen');
         video.classList.add('video');
+        expandBtn.classList.replace('fa-compress', 'fa-expand');
+        expandBtn.setAttribute('title', 'Expand');
     }
   });
