@@ -1,5 +1,3 @@
-
-
 const player = document.querySelector('.player');
 const video= document.querySelector('video');
 const progressRange = document.querySelector('.progress-range');
@@ -14,9 +12,7 @@ const fullscreenBtn = document.querySelector('.fullscreen');
 const speed = document.querySelector('.player-speed');
 const expandBtn = document.getElementById('fs-btn');
 
-
 // Play & Pause ----------------------------------- //
-
 function showPlayIcon() {
     playBtn.classList.replace('fa-pause', 'fa-play');
     playBtn.setAttribute('title', 'Play');
@@ -38,9 +34,7 @@ function togglePlay() {
 //on video end, show play button icon
 video.addEventListener('ended', showPlayIcon);
 
-
 // Progress Bar ---------------------------------- //
-
 //calculate display time format
 function displayTime(time) {
     const minutes = Math.floor(time/60);
@@ -68,7 +62,6 @@ function setProgress(e) {
 
 // Volume Controls --------------------------- //
 let lastVolume = 1;
-
 
 //volume bar
 function changeVolume(e) {
